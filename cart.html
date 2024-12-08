@@ -1,0 +1,93 @@
+<!-- cart.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VmoGames - Корзина</title>
+    <link rel="stylesheet" href="css/cart.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Подключение Font Awesome для иконок -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">VmoGames</div>
+            <ul class="nav-links">
+                <li><a href="main.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="cart.html" class="active">Корзина <span class="cart-count">0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="cart-container">
+            <h1>Корзина</h1>
+            
+            <div class="cart-content">
+                <div class="cart-items">
+                    <!-- Сюда будут добавляться товары -->
+                </div>
+
+                <div class="cart-summary">
+                    <h2>Итого</h2>
+                    <div class="summary-item">
+                        <span>Товары:</span>
+                        <span class="total-items">0</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Сумма:</span>
+                        <span class="total-price">0 ₽</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Скидка:</span>
+                        <span class="total-discount">0 ₽</span>
+                    </div>
+                    <div class="summary-item total">
+                        <span>К оплате:</span>
+                        <span class="final-price">0 ₽</span>
+                    </div>
+                    <div class="promo-code">
+                        <div class="input-icon">
+                            <i class="fas fa-tag"></i>
+                            <input type="text" placeholder="Промокод">
+                        </div>
+                        <button>Применить</button>
+                    </div>
+                    <div class="email-input-container">
+                        <div class="input-icon">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" class="email-input" placeholder="Введите ваш email" required>
+                        </div>
+                    </div>
+                    <button class="checkout-btn">Оформить заказ11111</button>
+                </div>
+            </div>
+
+            <div class="empty-cart" style="display: none;">
+                <h2>Ваша корзина пуста</h2>
+                <p>Перейдите в каталог, чтобы выбрать игры</p>
+                <a href="catalog.html" class="to-catalog-btn">Перейти в каталог</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>О нас</h3>
+                <p>VmoGames - ваш надежный магазин игровых ключей</p>
+            </div>
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <p>Почта: vmogames.yandex.ru</p>
+                <p>Телефон: +8 (800) 555-35-35</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/cart.js"></script>
+</body>
+</html>

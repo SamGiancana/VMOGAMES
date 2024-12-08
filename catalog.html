@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VmoGames - Каталог</title>
+    <link rel="stylesheet" href="css/catalog.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">VmoGames</div>
+            <ul class="nav-links">
+                <li><a href="main.html">Главная</a></li>
+                <li><a href="catalog.html" class="active">Каталог</a></li>
+                <li><a href="cart.html">Корзина <span class="cart-count">0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="catalog-container">
+            <aside class="filters">
+                <h3>Фильтры</h3>
+                <div class="filter-section">
+                    <h4>Жанр</h4>
+                    <label><input type="checkbox" value="action"> Экшен</label>
+                    <label><input type="checkbox" value="horror"> Хорроры</label>
+                    <label><input type="checkbox" value="races"> Гонки</label>
+                    <label><input type="checkbox" value="simulator"> Симуляторы</label>
+                </div>
+                <div class="filter-section">
+                    <h4>Цена</h4>
+                    <div class="price-inputs">
+                        <input type="number" id="min-price" placeholder="От">
+                        <input type="number" id="max-price" placeholder="До">
+                    </div>
+                </div>
+                <button id="apply-filters">Применить</button>
+            </aside>
+
+            <section class="catalog-content">
+                <div class="catalog-header">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Поиск игр...">
+                        <button>Найти</button>
+                    </div>
+                    <div class="sort-options">
+                        <select id="sort-select">
+                            <option value="popular">По популярности</option>
+                            <option value="price-asc">По возрастанию цены</option>
+                            <option value="price-desc">По убыванию цены</option>
+                            <option value="name">По названию</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="games-grid">
+          <!-- Будет заполнено через JaaScript -->
+                </div>
+
+                <div class="pagination">
+                    <!-- Будет заполнено через JavaScript -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>О нас</h3>
+                <p>VmoGames - ваш надежный магазин игровых ключей</p>
+            </div>
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <p>Почта: vmogames.yandex.ru</p>
+                <p>Телефон: +8 (800) 555-35-35</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/catalog.js"></script>
+</body>
+</html>
